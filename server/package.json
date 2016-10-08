@@ -1,0 +1,27 @@
+{
+  "name": "react-native-test-project",
+  "version": "1.0.0",
+  "description": "react-native-test-project",
+  "scripts": {
+    "start": "babel-node ./bin/www.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/303394539/react-native-test-project/server"
+  },
+  "dependencies": {
+    "babel-core": "^6.17.0",
+    "babel-plugin-async-to-promises": "^1.0.5",
+    "babel-preset-es2015": "^6.16.0",
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
+    "debug": "^2.2.0",
+    "express": "^4.14.0",
+    "log4js": "^0.6.38",
+    "morgan": "^1.7.0",
+    "mysql": "^2.11.1",
+    "promise": "^7.1.1",
+    "redis": "^2.6.2",
+    "uuid": "^2.0.3"
+  }
+}
