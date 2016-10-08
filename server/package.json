@@ -1,14 +1,15 @@
 {
-  "name": "react-native-test-project",
+  "name": "react-native-test-project-server",
   "version": "1.0.0",
-  "description": "react-native-test-project",
+  "description": "react-native-test-project-server",
   "scripts": {
     "start": "babel-node ./bin/www.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/303394539/react-native-test-project/server"
+    "url": "https://github.com/303394539/react-native-test-project/tree/master/server"
   },
+  "license": "",
   "dependencies": {
     "babel-core": "^6.17.0",
     "babel-plugin-async-to-promises": "^1.0.5",

@@ -41,5 +41,7 @@ android/app/libs
 android/keystores/debug.keystore
 
 # server/
-
 server/logs/
+
+# web/
+web/*.css

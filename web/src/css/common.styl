@@ -1,0 +1,195 @@
+@import 'lib'
+
+_1px=0.03125rem
+PAGE_WIDTH=20em
+
+// Base
+html
+  font-family 'Helvetica Neue', 'Nimbus Sans L', Arial, sans-serif
+  // user-select none
+  -webkit-tap-highlight-color rgba(0, 0, 0, 0)
+  font-size 16px
+  -webkit-text-size-adjust 100%
+  //height 100%
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td, section, header, footer
+  position relative;
+  margin 0
+  padding 0
+
+body
+  //min-height 100%
+  -webkit-overflow-scrolling touch
+  vendor font-smoothing antialiased
+
+fieldset, img
+  border 0
+
+abbr, acronym
+  border 0
+  font-variant normal
+
+:focus
+  outline 0
+
+table
+  border-collapse collapse
+  border-spacing 0
+
+h1, h2, h3, h4, h5, h6
+  font-weight normal
+  font-size 100%
+
+blockquote, q
+  quotes none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content ''
+  content none
+
+// ::-webkit-input-placeholder
+textarea, input, select
+  resize none
+  appearance caret
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+  -webkit-appearance none
+  margin 0
+
+input[type=number]
+  appearance textfield
+
+ul, ol
+  list-style none
+
+li
+  display block
+
+a, a:hover, a:active, a:link, a:visited
+  color inherit
+  text-decoration none
+
+.html
+  ul, ol
+    list-style disc inside !important
+    margin 1.12em 0
+    margin-left 2.5em
+  ol
+    list-style-type decimal !important
+  li
+    display list-item
+
+// Common **************************************************************
+.hide
+  display none !important
+
+.ellipsis
+  ellipsis 1
+
+.hflexbox
+  flexbox horizontal
+
+.vflexbox
+  flexbox vertical
+
+.space
+  box-flex 1
+
+.fixed
+  position fixed
+  z-index 1000
+.scrim
+  @extend .fixed
+  top 0
+  right 0
+  left 0
+  bottom 0
+  background-color rgba(0,0,0,0.5)
+
+.highlight
+  background-color rgba(0,0,0,0.1) !important
+  user-select none
+
+.clear
+  clear both
+
+@keyframes fade-in
+  0%
+    opacity 0
+  100%
+    opacity 1
+
+@keyframes fade-out
+  0%
+    opacity 1
+  100%
+    opacity 0
+
+@keyframes fade-in-out
+  0%
+    opacity 0
+  50%
+    opacity 1
+  100%
+    opacity 0
+
+@keyframes fly-up
+  0%
+    opacity 0
+    transform translate3d(0, 1.875em, 0)
+  100%
+    opacity 1
+    transform translate3d(0, 0, 0)
+
+@keyframes fly-down
+  0%
+    opacity 0
+    transform translate3d(0, -1.875em, 0)
+  100%
+    opacity 1
+    transform translate3d(0, 0, 0)
+
+@keyframes fly-left
+  0%
+    opacity 0
+    transform translate3d(1.875em, 0, 0)
+  100%
+    opacity 1
+    transform translate3d(0, 0, 0)
+
+@keyframes fly-right
+  0%
+    opacity 0
+    transform translate3d(-1.875em, 0, 0)
+  100%
+    opacity 1
+    transform translate3d(0, 0, 0)
+
+.animation-fade-in
+  animation fade-in .3s ease-out 1
+
+.animation-fade-out
+  animation fade-out .3s ease-out 1
+
+.animation-fly-up
+  animation fly-up .3s ease-out 1
+
+.animation-fly-down
+  animation fly-down .3s ease-out 1
+
+.animation-fly-left
+  animation fly-left .3s ease-out 1
+
+.animation-fly-right
+  animation fly-right .3s ease-out 1
+
+// Page
+article.mpage
+  position relative
+  z-index 10
+  //min-height 100%
+  width PAGE_WIDTH
+  margin auto
+  .mpage-content
+    padding-bottom 1px
