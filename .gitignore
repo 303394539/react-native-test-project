@@ -44,4 +44,4 @@ android/keystores/debug.keystore
 server/logs/
 
 # web/
-web/*.css
+web/**/*.css
