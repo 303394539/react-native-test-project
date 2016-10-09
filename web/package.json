@@ -32,10 +32,8 @@
       "es2015"
     ],
     "plugins": [
-      "async-to-promises",
-      [
-        "transform-react-jsx",
-        {
+      "async-to-promises", [
+        "transform-react-jsx", {
           "pragma": "Baic.jsx"
         }
       ]
